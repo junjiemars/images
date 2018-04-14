@@ -1,0 +1,146 @@
+#+TITLE: Mathmatics
+#+STARTUP: overview
+# #+STARTUP: latexpreview
+#+AUTHOR: [[南山竹]]
+
+
+* Preliminaries
+
+** Sets and Functions
+
+*** Sets
+
+**** Membership
+
+For a set \( A \), the membership of the element \( x \) in \( A \)
+is denoted by \( x \in A \), and the nonmembership of \( x \) in \( A \) is 
+denoted by \( x \notin A \). 
+
+Two sets are the same if and only if they have the same members. 
+
+Frequently sets will be denoted by braces, so that 
+\( \{x \ \vert \ proposition\ about\ x \} \) is the set of all elements \( x \) 
+such that the proposition about \( x \) is true.
+
+
+**** Relationship
+
+If \( A \) and \( B \) are sets, then \( A \) is called a */subset/* of \( B \)
+if and only if each member of \( A \) is a member of \( B \), and we denote 
+this by \( A \subseteq B \) or \( B \supseteq A \).
+
+The */union/* of two sets \( A \) and \( B \), written \( A \cup B \), 
+is the set of all elements that belong either to \( A \) or to \( B \); that is,
+\( A \cup B  = \{x \ \vert \ x \in A \ or \ x \in B \} \).
+
+The */intersection/* of \( A \) and \( B \), denoted by \( A \cap B \), 
+is the set of all points that belong to both \( A \) and \( B \); that is,
+\( A \cap B = \{x \ \vert \ x \in A \ and \  x \in B \} \).
+
+Given sets \( A \) and \( B \), the */complement/* of \( A \) in \( B \), 
+denoted by \( B \setminus A \), is the set of all points in \( B \) that are not 
+in \( A \). In particular, for a set \( B \) and a point \( x_0 \), \( B \setminus \{x_0\} \) 
+denotes the set of points in \( B \) that are not euqal to \( x_0 \).
+
+The set that has no members is called the */empty set/* and is denoted 
+by \( \emptyset \).
+
+
+*** Functions
+
+Given two sets \( A \) and \( B \), by a function from \( A \) to \( B \) 
+we mean a correspondence that associates with each point in \( A \) a point 
+in \( B \). Frequently we denote such a function by \( \ f: A \to B \), 
+and for each point \( x \) in \( A \), we denote by \( \ f\ (x) \) the point 
+in \( B \) that is associated with \( x \).
+
+We call the set A the /domain/ of the function \( \ f: A \to B \) and we define
+the /image/ of \( \ f: A \to B \) denoted by \( \ f\ (x) \), 
+to be \( \{y \ \vert \ y = f\ (x) \ for\ some\ point\ y\ in\ A\} \).
+
+If \( \ f\ (x) = B \), the function \( \ f: A \to B \) is said to be */onto/*. 
+
+If for each point \( y \) in \( \ f\ (A) \) there is exactly one point \( x \) 
+in \( A \) such that \( y = f(x) \), the function \( \ f: A \to B \) is said to be 
+*/one-to-one/*.
+
+A function \( \ f: A \to B \) that is both */one-to-one/* and */onto/* is said to
+be */invertible/*. For an invertible function \( \ f: A \to B \), for each point
+\( y \) in \( \ f\ (B) \) there is exactly one point \( x \) in \( A \) 
+such that \( \ f\ (x) = y \), and this point is denoted by \( f^{-1}(y) \); this 
+correspondence defines the function \( \ f^{-1}: B \to A \), which is called the
+*/inverse function/* of the function \( \ f: A \to B \).
+
+
+** The Field Axioms for the Real Numbers
+
+In order to rigorously develop analysis, it is necessary to understand the 
+foundation on which it is constructed; this foundation is the set of real 
+numbers, which we will denote by \( \mathbb{R} \). 
+
+Of course, the reader is quite familar with many properties of the real numbers.
+However, in order to clarify the basis of our development, it is very useful to 
+codify the properties of \( \mathbb{R} \). We will assume that the set of of 
+real numbers \( \mathbb{R} \) satisfies three groups of axioms: 
+the *Field Axiom*, the *Positivity Axioms*, and the *Completeness Axiom*. 
+A discussion of the Completeness Axiom, which is perhaps the least familar to
+the reader, will be deferred until Chapter 1. We will now describe the Field
+Axioms and Positivity Axioms and some of their consequences.
+
+For each pair of real numbers \( a \) and \( b \), a real number is defined 
+that is called the */sum/* of \( a \) and \( b \), written \( a + b \), and a 
+real number is defined that is called the */product/* of \( a \) and \( b \), 
+denoted by \( ab \). These operations satisfy the following collection of 
+axioms.
+
+*** The Fields Axioms
+
+/Commutativity of Addition:/  For all real numbers \( a \) and \( b \),
+\[ a + b = b + a. \]
+
+/Associativity of Addition:/  For all real numbers \( a \), \( b \), and \( c \),
+\[ (a + b) + c = a + ( b + c). \]
+
+/The Additive Identity:/  There is a real number, which is denoted by \( 0 \), 
+such that \[ 0 + a = a + 0 \quad for\ all\ real\ numbers\ a. \]
+
+/The Additive Inverse:/  For each real number \( a \), there is a real number 
+\( b \) such that \[ a + b = 0. \]
+
+** The Positivity Axioms for the Real Numbers
+
+** First Order Predicate Logic
+
+Formally, a logic consists of three parts: /syntax/, /semantics/, and a set of 
+/inference/ rules.
+
+The */syntax/* tells you exactly what statements in the logic look like and 
+how you should read and write them.
+
+*/Semantics/* tells what statements in logic mean by showing you how to move between
+the abstract symbolic statements of the logic and ideas and objects that you're
+reasoning about.
+
+Finally, the */inference/* rules describe /how/, given a collection of statements 
+written in the logic, you can perform reasoning in the logic.
+
+
+*** Syntax
+
+A symbol called a /constant/, or an /atom/, each atom represents a particular
+object, number, or value that can be reasoned about using logic.
+
+variable
+
+A /predicate/ is sort of like a function that describe properties of objects
+or relationships between objects.
+
+
+*** Semantics
+
+*** Inference
+
+
+* References
+
++ Patrick M. Fitzpatrick. Advanced Calculus, A Course in Mathematical Analysis.
